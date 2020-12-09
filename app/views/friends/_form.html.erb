@@ -11,32 +11,33 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :first_name %>
-    <%= form.text_field :first_name %>
+  <div class="form-group row">
+    <%= form.label :first_name, class:'col-sm-2 col-form-label' %>
+    <%= form.text_field :first_name , placeholder:'First name'%>
   </div>
 
-  <div class="field">
-    <%= form.label :last_name %>
-    <%= form.text_field :last_name %>
+  <div class="form-group row">
+    <%= form.label :last_name, class:'col-sm-2 col-form-label'%>
+    <%= form.text_field :last_name  , placeholder:'Last name'%>
   </div>
 
-  <div class="field">
-    <%= form.label :email %>
-    <%= form.text_field :email %>
+  <div class="form-group row">
+    <%= form.label :email, class:'col-sm-2 col-form-label'%>
+    <%= form.text_field :email , placeholder:'email'%>
   </div>
 
-  <div class="field">
-    <%= form.label :phone_number %>
-    <%= form.text_field :phone_number %>
+  <div class="form-group row">
+    <%= form.label :phone_number, class:'col-sm-2 col-form-label' %>
+    <%= form.text_field :phone_number, placeholder:'Phone Number' %>
   </div>
 
-  <div class="field">
-    <%= form.label :twitter %>
-    <%= form.text_field :twitter %>
+  <div class="form-group row">
+    <%= form.label :twitter, class:'col-sm-2 col-form-label' %>
+    <%= form.text_field :twitter,placeholder:'twitter' %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class:'btn btn-secondary'%>
   </div>
-<% end %>
+  <br></br>
+<% end  %>
